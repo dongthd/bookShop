@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="zxx" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/head :: head}"></head>
+<body>
+
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+		<header th:replace="~{/fragments/header :: header}"></header>
+		<!--************************************
+				Header End
+		*************************************-->
+		<!--************************************
+				Inner Banner Start
+		*************************************-->
+		<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-07.jpg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="tg-innerbannercontent">
+							<h1>Giỏ Hàng</h1>
+							<ol class="tg-breadcrumb">
+								<li><a href="javascript:void(0);">Trang chủ</a></li>
+								<li class="tg-active">Giỏ hàng</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Inner Banner End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="tg-main" class="tg-main tg-haslayout">
+		
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bread-inner">
+							<ul class="bread-list">
+								<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="blog-single.html">Cart</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- End Breadcrumbs -->
+			
+	<!-- Shopping Cart -->
+	<div class="shopping-cart section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Shopping Summery -->
+					<table class="table shopping-summery">
+						<thead>
+							<tr class="main-hading">
+								<th>SẢN PHẨM</th>
+								<th>TÊN</th>
+								<th class="text-center">ĐƠN GIÁ</th>
+								<th class="text-center">SỐ LƯỢNG</th>
+								<th class="text-center">TỔNG TIỀN</th> 
+								<th class="text-center">HÀNH ĐỘNG</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="100" value="1">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove">
+								<a href="#"><i class="fa fa-trash-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[2]" class="input-number"  data-min="1" data-max="100" value="2">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[2]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove">
+								<a href="#"><i class="fa fa-trash-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[3]" class="input-number"  data-min="1" data-max="100" value="3">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[3]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove">
+									<a href="#"><i class="fa fa-trash-o"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!--/ End Shopping Summery -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<!-- Total Amount -->
+					<div class="total-amount">
+						<div class="row">
+							<div class="col-lg-8 col-md-5 col-12">
+								<div class="left">
+									<div class="coupon">
+										<form action="#" target="_blank">
+											<input name="Coupon" placeholder="Enter Your Coupon">
+											<button class="btn">Apply</button>
+										</form>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-7 col-12">
+								<div class="right">
+									<ul>
+										<li>Cart Subtotal<span>$330.00</span></li>
+										<li>Shipping<span>Free</span></li>
+										<li>You Save<span>$20.00</span></li>
+										<li class="last">You Pay<span>$310.00</span></li>
+									</ul>
+									<div class="button5">
+										<a href="#" class="btn">Checkout</a>
+										<a href="#" class="btn">Continue shopping</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ End Total Amount -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Shopping Cart -->
+	
+		</main>
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+		<footer id="tg-footer" class="tg-footer tg-haslayout" th:replace="~{/fragments/footer :: footer}"></footer>
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/countTo.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/gmap3.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

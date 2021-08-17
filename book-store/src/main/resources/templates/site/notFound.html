@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{/fragments/head :: head}"></head>
+<body>
+
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+		<header th:replace="~{/fragments/header :: header}"></header>
+		<!--************************************
+				Header End
+		*************************************-->
+		<!--************************************
+				Inner Banner Start
+		*************************************-->
+		<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-07.jpg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="tg-innerbannercontent">
+							<h1>404 Error</h1>
+							<ol class="tg-breadcrumb">
+								<li><a href="javascript:void(0);" th:href="@{/}">Trang chủ</a></li>
+								<li class="tg-active">404 Error</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Inner Banner End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="tg-main" class="tg-main tg-haslayout">
+			<!--************************************
+					404 Error Start
+			*************************************-->
+			<div class="tg-sectionspace tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="tg-404error">
+							<div class="col-xs-12 col-sm-12 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
+								<div class="tg-404errorcontent">
+									<h2>Không thể tìm thấy !</h2>
+									<span>404</span>
+								</div>
+								<form class="tg-formtheme tg-formsearch">
+									<div class="tg-gobackhome">
+										<span>Quay lại : </span>
+										<a href="javascript:void(0);" th:href="@{/}">Trang Chủ</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--************************************
+					404 Error End
+			*************************************-->
+		</main>
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+		<footer id="tg-footer" class="tg-footer tg-haslayout" th:replace="~{/fragments/footer :: footer}"></footer>
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/countTo.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/gmap3.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+ 
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<th:block th:fragment= "basePage">
+	<div class="tg-widget tg-catagories">
+		<div class="tg-widgettitle">
+			<h3>Thể loại sách</h3>
+		</div>
+		<div class="tg-widgetcontent">
+			<ul>
+				<li class="ty-compact-list" th:each="item : ${coutnBookByCategory}">
+					<a href="javascript:void(0);" th:href="@{/bookByCategory(id=${item[0]})}">
+						<span
+							 th:text="${item[1]}">
+						</span>
+						<em 
+							th:text="${item[2]}">
+						</em>
+					</a>
+				</li>
+				<li class="show-more"><a href="javascript:void(0);"><span>Xem thêm</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="tg-widget tg-catagories">
+		<div class="tg-widgettitle">
+			<h3>Tác giả</h3>
+		</div>
+		<div class="tg-widgetcontent">
+			<ul>
+				<li class="ty-compact-listAuthor" th:each="item : ${coutnBookByAuthor}">
+					<a href="javascript:void(0);" th:href="@{/bookByAuthor(id=${item[0]})}">
+						<span
+							th:text="${item[1]}">
+						</span>
+						<em
+							th:text="${item[2]}">
+						</em>
+					</a>
+				</li>
+				<li class="show-moreAuthor"><a href="javascript:void(0);"><span>Xem thêm</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="tg-widget tg-catagories">
+		<div class="tg-widgettitle">
+			<h3>Nhà xuất bản</h3>
+		</div>
+		<div class="tg-widgetcontent">
+			<ul>
+				<li class="ty-compact-listNXB" th:each="item : ${coutnBookByNXB}">
+					<a href="javascript:void(0);" th:href="@{/bookByPublishingHouse(id=${item[0]})}">
+						<span
+							th:text="${item[1]}">
+						</span>
+						<em
+							th:text="${item[2]}">
+						</em>
+					</a>
+				</li>
+				<li class="show-moreNXB"><a href="javascript:void(0);"><span>Xem thêm</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="tg-widget tg-widgettrending">
+		<div class="tg-widgettitle">
+			<h3>Sản phẩm thịnh hành</h3>
+		</div>
+		<div class="tg-widgetcontent">
+			<ul>
+				<li class="ty-compact-listPopular" th:each="item : ${listTop10Books}">
+					<article class="tg-post">
+						<figure>
+							<a href="javascript:void(0);">
+								<img th:src="@{'/loadImage?imageName='+${item.bookImage}}" style="width: 100px; height: 90px" alt="image description">
+							</a>
+						</figure>
+						<div class="tg-postcontent">
+							<div class="tg-posttitle">
+								<h3><a href="javascript:void(0);" th:text="${item.bookName}"></a></h3>
+							</div>
+							<span class="tg-bookwriter">Bởi:
+								<a href="javascript:void(0);" th:text="${item.author?.authorName}"></a>
+							</span>
+						</div>
+					</article>
+				</li>
+				<li class="show-listPopular"><a href="javascript:void(0);"><span>Xem thêm</span></a></li>
+			</ul>
+		</div>
+	</div>
+	</th:block>
+</body>
+</html>
